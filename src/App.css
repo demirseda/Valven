@@ -1,0 +1,133 @@
+:root{
+  --black_color: #010520;
+  --primary_color: #0022FF;
+  --btn_color: #1D2CF3;
+  --white: #FFFFFF;
+  --color_0: 255,255,255;
+  --color_1: 255,255,255;
+  --color_2: 0,0,0;
+  --color_3: 237,28,36;
+  --color_4: 0,136,203;
+  --color_5: 255,203,5;
+  --color_6: 114,114,114;
+  --color_7: 176,176,176;
+  --color_8: 255,255,255;
+  --color_9: 114,114,114;
+  --color_10: 176,176,176;
+  --color_11: 255,255,255;
+  --color_12: 243,244,247;
+  --color_13: 196,200,212;
+  --color_14: 83,87,106;
+  --color_15: 1,5,32;
+  --color_16: 229,232,255;
+  --color_17: 184,192,255;
+  --color_18: 0,34,255;
+  --color_19: 0,21,156;
+  --color_20: 0,14,105;
+  --color_21: 241,251,230;
+  --color_22: 198,229,165;
+  --color_23: 112,216,0;
+  --color_24: 79,153,0;
+  --color_25: 55,107,0;
+  --color_26: 253,235,238;
+  --color_27: 235,171,190;
+  --color_28: 224,0,68;
+  --color_29: 150,0,45;
+  --color_30: 110,0,33;
+  --color_31: 230,251,252;
+  --color_32: 171,235,230;
+  --color_33: 0,224,208;
+  --color_34: 0,150,140;
+  --color_35: 0,110,101;
+  --font_0: normal normal bold 50px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  --font_1: normal normal normal 16px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  --font_2: normal normal bold 38px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  --font_3: normal normal bold 32px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  --font_4: normal normal bold 28px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  --font_5: normal normal bold 20px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+  --font_6: normal normal normal 20px/1.4em quicksand,sans-serif;
+  --font_7: normal normal bold 20px/1.4em quicksand,sans-serif;
+  --font_8: normal normal normal 17px/1.4em quicksand,sans-serif;
+  --font_9: normal normal normal 14px/1.4em quicksand,sans-serif;
+  --font_10: normal normal normal 12px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  --wix-ads-height: 0px;
+  --wix-ads-top-height: 0px;
+  --site-width: 980px;
+  --above-all-z-index: 100000;
+  --portals-z-index: 100001;
+  --minViewportSize: 320;
+  --maxViewportSize: 1920;
+  --navbarHeight:100px;
+}
+@font-face {
+  font-family: Helvetica, Sans-Serif;
+  src: url('./assets/fonts/Arimo-Bold.ttf');
+}
+ul{
+  list-style: none;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  font: var(--font_8);
+}
+h1,h2,h3,h4,h5,h6{
+  margin:unset;
+}
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 192px;
+  height: 56px;
+  transition: .3s ease all;
+  background-color: transparent;
+  color: var(--btn_color);
+}
+.btn:hover{
+  cursor: pointer;
+}
+.btn_outline{
+  border: 1px solid var(--btn_color);
+  border-radius: 10px;
+}
+.btn_outline_white{
+  border: 1px solid var(--white);
+  border-radius: 10px;
+  color: var(--white);
+}
+.btn_outline_white:hover{
+  background-color: var(--white);
+  color: var(--btn_color);
+
+}
+.btn:hover{
+  background-color: var(--primary_color);
+  color: #FFFFFF;
+}
+.btn_fill{
+  background-color: var(--primary_color);
+  color: var(--white);
+}
+.App{
+  position: relative;
+}
+.App .bg_image {
+  background-image: url('../public/images/valven-bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  opacity: 0.25;
+}
+.dots{
+  width: 100%;
+  height: 200px;
+  background: url('../public/images/dot.webp');
+  margin-top: -300px;
+  opacity: 0.1;
+  z-index: -1;
+}

@@ -1,0 +1,49 @@
+.page_header_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: var(--navbarHeight);
+    padding: 20px 0 13px 0;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    background-color: transparent;
+    transition: all .5s ease;
+}
+.page_header_wrapper.active{
+    background-color: #FFFFFF;
+    top: 0px !important;
+    z-index: 5;
+}
+
+.logo_wrapper{
+    width: 160px;
+    margin-left: 100px;
+}
+.logo_wrapper img{
+    width: 100%;
+}
+.navbar_wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+.navbar_wrapper ul{
+    display: flex;
+}
+.navbar_wrapper ul li {
+    padding: 0 15px;
+    width: 120px;
+}
+.navbar_wrapper ul li a{
+    color: var(--black_color);
+    font: var(--font_8);
+    padding: 8px;
+}
+.navbar_wrapper ul li a:hover{
+    color: var(--primary_color);
+}
+.btn_join_beta_program{
+    width: 192px;
+}

@@ -1,0 +1,278 @@
+.page_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 60px;
+    position: relative;
+}
+.content_wrapper::after{
+    background-image: url('../../../public/images/valven-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: calc(100vh + var(--navbarHeight));
+    z-index: -1;
+    position: absolute;
+    top: -132px;
+    content: '';
+    opacity: 0.25;
+}
+.content_wrapper > div {
+    display: flex;
+    width: var(--site-width);
+}
+.content_left_wrapper h3{
+    color: rgb(var(--color_15));
+    font: var(--font_0);
+    font-weight: 900;
+}
+.content_left_wrapper p{
+    color: var(--black_color);
+    font: var(--font_6);
+}
+
+/* CONTENT2 CSS */
+.powerful_interface_wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+.powerful_interface_wrapper h4{
+    color: var(--black_color);
+    font: var(--font_4);
+    font-weight: bold;
+}
+.image_element{
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px #a5b0f9;
+    width: fit-content;
+    overflow: hidden;
+}
+
+.powerful_interface_images .image_element:first-child{
+    position: absolute;
+    top: 225px;
+    left: 10px;
+   
+}
+.powerful_interface_images .image_element:nth-child(2){
+    position: absolute;
+    top: 310px;
+    left: 23px;
+}
+.powerful_interface_images .image_element:nth-child(3){
+    position: absolute;
+    top: 400px;
+    left: 10px;
+}
+.powerful_interface_images .image_element:last-child{
+    position: absolute;
+    top: 140px;
+    right: 26px;
+}
+.organized_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgb(var(--color_12)) 85%, rgba(255,255,255,0) 100%)
+}
+.organized_wrapper h3{
+    color: var(--color_15);
+    font: var(--font_2);
+}
+.organized_wrapper p{
+    color: #53576A;
+    font: var(--font_8);
+    text-align: center;
+    width: 602px;
+    line-height: 1.5em;
+}
+.features_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.features_wrapper > section {   
+    padding: 120px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: var(--site-width);
+    margin: auto;
+}
+.feature_wrapper2{
+    flex-direction: row-reverse;
+}
+.feature_wrapper1 h6,
+.feature_wrapper2 h6,
+.feature_wrapper3 h6{
+    color: var(--black_color);
+    font: var(--font_4);
+}
+.feature_wrapper1 p,
+.feature_wrapper2 p,
+.feature_wrapper3 p{
+    color: #53576A;
+    font: var(--font_8);
+    line-height: 1.5em;
+}
+.feature_bg_color{
+    border-radius: 10px;
+    width: 548px;
+    height: 380px;
+}
+.feature_wrapper1 .feature_bg_color{
+    background-color: #E5E8FF;
+    border: 1px solid #E5E8FF;
+}
+.feature_wrapper2 .feature_bg_color{
+    background-color: #EEF8E5;
+    border: 1px solid #EEF8E5;
+}
+.feature_wrapper3 .feature_bg_color{
+    background-color: #E0F5F8;
+    border: 1px solid #E0F5F8;
+}
+.feature_image_wrapper{
+    position: relative;
+}
+.feature_image_wrapper .main_image_element{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px #a5b0f9;
+    width: fit-content;
+    overflow: hidden;
+}
+.feature_wrapper2 .main_image_element{
+    top: 5%;
+    left: -7%;
+}
+.feature_wrapper1 .feature_text,
+.feature_wrapper2 .feature_text,
+.feature_wrapper3 .feature_text{
+    width: 32%;
+}
+.feature_solid{
+    width: 40px;
+    height: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.feature_wrapper1 .feature_solid{
+    background: var(--primary_color);
+}
+.feature_wrapper2 .feature_solid{
+    background: #A9E566;
+}
+.feature_wrapper3 .feature_solid{
+    background: rgb(var(--color_33));
+}
+.feature_wrapper1_images .image_element:first-child{
+    position: absolute;
+    top: -40px;
+    right: 17%;
+}
+.feature_wrapper1_images .image_element:nth-child(2){
+    position: absolute;
+    top: 39%;
+    left: 2%;
+}
+.feature_wrapper1_images .image_element:nth-child(3){
+    position: absolute;
+    top: 62%;
+    left: 23%;
+}
+.feature_wrapper1_images .image_element:nth-child(4){
+    position: absolute;
+    bottom: 0%;
+    left: 14%;
+}
+.feature_wrapper1_images .image_element:nth-child(5){
+    position: absolute;
+    bottom: -26px;
+    left: 67%;
+}
+.feature_wrapper2_images .image_element:first-child{
+    position: absolute;
+    top: -32px;
+    right: 20%;
+}
+.feature_wrapper2_images .image_element:nth-child(2){
+    position: absolute;
+    top: 44%;
+    left: -64px;
+}
+.feature_wrapper2_images .image_element:nth-child(3){
+    position: absolute;
+    bottom: -8%;
+    left: 8%;
+
+}
+.feature_wrapper2_images .image_element:nth-child(4){
+    position: absolute;
+    right: 20px;
+    bottom: 22%;
+}
+
+.feature_wrapper3_images .image_element:first-child{
+    position: absolute;
+    top: -26px;
+    right: 0%;
+}
+.feature_wrapper3_images .image_element:nth-child(2){
+    position: absolute;
+    bottom: 0;
+    left: 11%;
+}
+.feature_wrapper3_images .image_element:nth-child(3){
+    position: absolute;
+    bottom: -4%;
+    right: -10%;
+}
+
+.powerful_interface_images {
+    width: var(--site-width);
+    display: block;
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+}
+
+section.powerful_interface_wrapper:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    bottom: 100px;
+    background: url(http://localhost:3000/static/media/dot.52a67362d539022a44b0.webp);
+    z-index: 0;
+    opacity: 0.1;
+}
+.page_content > section {
+    height: 80vh;
+}
+.first_join_beta:hover{
+   background-color: #00159C;
+   border-color: #00159C;
+}
+.powerful_interface_wrapper > img {
+    z-index: 1;
+}

@@ -1,0 +1,42 @@
+.beta_wrapper{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+    background-color: var(--primary_color);
+    color: var(--white);
+    position: relative;
+}
+.beta_wrapper::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity:0.30;
+    background-image: url(../../../public/images/beta_bg.webp);
+    pointer-events: none;
+}
+.beta_wrapper::after{
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 200px;
+    opacity: 0.15;
+    background-image: url(../../../public/images/dot.webp);
+    pointer-events: none;
+}
+.beta_wrapper .beta_title{
+    font:var(--font_2);
+}
+.beta_wrapper p {
+    font:var(--font_6);
+
+}
+.beta_wrapper a:hover{
+    background-color: var(--white);
+    color: var(--primary_color);
+}
